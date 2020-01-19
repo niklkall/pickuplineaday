@@ -1,0 +1,48 @@
+<html>
+    <head>
+    <style>
+    body {
+        background-color: black;
+    }
+    header{
+        color: white;
+        text-align: center;
+        font-size: xx-large;
+        font-weight: bolder;
+        text-decoration: underline;
+    }
+    div{
+        background-color: rgb(29, 29, 29);
+        width: 400px;
+        margin-top: 30px;
+        padding-left: 3px;
+        padding-right: 3px;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        font-size: x-large;
+        height: 100px;
+        line-height: 30px;
+        border:5px white;
+        border-style: dashed;
+    }
+    ul{ display: flex; flex-direction: column-reverse; align-items: center;}   
+    #rose_1{
+        align-self: baseline;
+        width:212.5 ;
+        height: 159.5;
+    }
+    </style>
+    </head>
+    <body>
+        <header>
+            ONE-PICKUPLINE-A-DAY
+        </header>
+        <ul>
+        {% for post in object_list %}
+        <li><div>{{ post }}</div></li>
+        {% endfor %}
+        </ul>
+        <img src="https://images-na.ssl-images-amazon.com/images/I/41iIx75KUWL._SX425_.jpg" alt ="gamwwww" id="rose_1"/>
+    </body>
+</html>
